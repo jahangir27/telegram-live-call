@@ -1,136 +1,54 @@
-:root {
-  color-scheme: light dark;
-  font-family: Arial, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
   background: #111827;
-  color: #f9fafb;
+  color: #fff;
 }
 
 .app {
-  max-width: 480px;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 16px;
-  display: grid;
-  gap: 16px;
-  min-height: 100vh;
+  padding: 20px;
 }
 
 .card {
   background: #1f2937;
-  border-radius: 20px;
-  padding: 18px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-}
-
-h1, h2 {
-  margin-top: 0;
-}
-
-.label {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 14px;
-  opacity: 0.9;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 16px;
 }
 
 .input {
   width: 100%;
+  padding: 12px;
+  margin: 10px 0 16px 0;
+  border-radius: 10px;
   border: 0;
-  outline: none;
-  border-radius: 14px;
-  padding: 12px 14px;
-  font-size: 16px;
-  margin-bottom: 16px;
 }
 
-.statusBox {
+.status {
+  padding: 12px;
   background: #374151;
-  border-radius: 18px;
-  padding: 18px;
-  text-align: center;
+  border-radius: 10px;
   margin-bottom: 16px;
-}
-
-.statusTitle {
-  font-size: 12px;
-  text-transform: uppercase;
-  opacity: 0.8;
-  margin-bottom: 6px;
-}
-
-.statusValue {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.statusSub {
-  font-size: 14px;
-  margin-top: 8px;
-  opacity: 0.8;
 }
 
 .row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-bottom: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.btn {
+button {
+  padding: 12px 16px;
   border: 0;
-  border-radius: 16px;
-  padding: 14px;
-  font-size: 16px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
-.btn.primary {
-  background: #2563eb;
-  color: white;
-}
-
-.btn.large {
-  width: 100%;
-  padding: 16px;
-}
-
-.btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.flags {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  font-size: 13px;
-  opacity: 0.85;
-  margin-top: 8px;
-}
-
-.logList {
-  display: grid;
-  gap: 10px;
-  max-height: 320px;
-  overflow: auto;
-}
-
-.logItem {
+.log {
   background: #374151;
-  border-radius: 14px;
-  padding: 10px 12px;
-  font-size: 14px;
-}
-
-.logTime {
-  font-size: 12px;
-  opacity: 0.7;
-  margin-top: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 8px;
 }
